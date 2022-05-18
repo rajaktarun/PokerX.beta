@@ -1,0 +1,7 @@
+D:\Intel_CardGame\Poker_Intel\WebApi\Intel.PokerX\Intel.PokerX.WebAPI\obj\Debug\netcoreapp3.1\Intel.PokerX.WebAPI.csproj.AssemblyReference.cache
+D:\Intel_CardGame\Poker_Intel\WebApi\Intel.PokerX\Intel.PokerX.WebAPI\obj\Debug\netcoreapp3.1\Intel.PokerX.WebAPI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Intel_CardGame\Poker_Intel\WebApi\Intel.PokerX\Intel.PokerX.WebAPI\obj\Debug\netcoreapp3.1\Intel.PokerX.WebAPI.AssemblyInfoInputs.cache
+D:\Intel_CardGame\Poker_Intel\WebApi\Intel.PokerX\Intel.PokerX.WebAPI\obj\Debug\netcoreapp3.1\Intel.PokerX.WebAPI.AssemblyInfo.cs
+D:\Intel_CardGame\Poker_Intel\WebApi\Intel.PokerX\Intel.PokerX.WebAPI\obj\Debug\netcoreapp3.1\Intel.PokerX.WebAPI.csproj.CoreCompileInputs.cache
+D:\Intel_CardGame\Poker_Intel\WebApi\Intel.PokerX\Intel.PokerX.WebAPI\obj\Debug\netcoreapp3.1\Intel.PokerX.WebAPI.MvcApplicationPartsAssemblyInfo.cs
+D:\Intel_CardGame\Poker_Intel\WebApi\Intel.PokerX\Intel.PokerX.WebAPI\obj\Debug\netcoreapp3.1\Intel.PokerX.WebAPI.MvcApplicationPartsAssemblyInfo.cache
