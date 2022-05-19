@@ -1,5 +1,7 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { HttpClientTestingModule, HttpTestingController } from '@angular/common/http/testing';
+import { CUSTOM_ELEMENTS_SCHEMA  } from '@angular/core';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -7,6 +9,8 @@ describe('AppComponent', () => {
       declarations: [
         AppComponent
       ],
+      imports: [HttpClientTestingModule],
+      schemas: [ CUSTOM_ELEMENTS_SCHEMA ]
     }).compileComponents();
   });
 
@@ -19,13 +23,6 @@ describe('AppComponent', () => {
   it(`should have as title 'ClientApp'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('ClientApp');
-  });
-
-  it('should render title', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('ClientApp app is running!');
+    expect(app.title).toEqual('PokerX Home');
   });
 });

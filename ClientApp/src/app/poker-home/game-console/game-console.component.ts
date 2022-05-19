@@ -16,8 +16,7 @@ export class GameConsoleComponent implements OnInit {
   player2:Player=<Player>{};
   player3:Player=<Player>{};
   player4:Player=<Player>{};
-  constructor(private pokerService: PokerDataService,
-    private httpClient: HttpClient) { }
+  constructor(private pokerService: PokerDataService) { }
 
     showcards:boolean=true;
 

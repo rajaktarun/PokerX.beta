@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
 import { PokerDataService } from '../services/pokerdata.service'
 
 @Component({
@@ -13,8 +12,7 @@ export class PokerHomeComponent implements OnInit {
   playerName="";
   enableConsole:boolean = false;
   bookName:string[]= [];
-  constructor(private pokerService: PokerDataService,
-    private httpClient: HttpClient) { }
+  constructor(private pokerService: PokerDataService) { }
 
   ngOnInit(): void {
     document.body.style.backgroundImage = "url('..\assets\background.jpg')";

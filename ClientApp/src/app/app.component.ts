@@ -7,7 +7,7 @@ import { environment } from '../environments/environment';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit{
-  title = 'PokerX Home';
+  public title = 'PokerX Home';
 
   ngOnInit(): void {
   }
