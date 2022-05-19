@@ -1,0 +1,59 @@
+
+<hr>
+    <div style="height:100%;width:100%">
+    <div class="container-fluid">
+        <br>
+        <div class="row row-cols-3">
+          <div class="col">
+                <img src="..\assets\bot.png" class="rounded-circle medium-bot" alt="player2.name" width="304" height="236">
+            <br>
+                <h3> {{player1.name}}</h3>
+            <hr>
+
+            <div class="row"*ngIf="showcards" >
+                <div class="column" *ngFor="let card of player1.cards;">
+                    <img [src]="getIcon(card.iconPath)" style="height:78px;width:60px;border: 1px solid black;">
+                </div>
+            </div>
+            <hr>
+            <button class="btn btn-primary" (click)="sortPlayerCAard()">Sort Cards</button>
+
+            </div>
+          <div class="col border border-primary">
+
+            <div class="card-body">
+                <h5 class="card-title">.: TABLE :.</h5>
+                <p class="card-text">Card in Table</p>
+                <div style="padding:10px">
+                    <div class="row" >
+                     <div class="column" *ngFor="let card of activeGame.freeCards;">
+                         <img [src]="getIcon(card.iconPath)" style="height:70px;width:55px;border: 1px solid black;">
+                     </div>
+                 </div>
+                </div>
+              </div>
+              <div class="card-footer text-muted">
+                <button (click)="endGame()">Exit Game</button>
+              </div>
+
+          </div>
+          
+          <div class="col">
+            <div class="row row-cols-1">
+            <div class="col">
+                <app-bot-card [player]="player2"></app-bot-card>
+                <hr>
+            </div>
+            <div class="col">
+                <app-bot-card [player]="player3"></app-bot-card>
+                <hr>
+            </div>
+            <div class="col">
+                <app-bot-card [player]="player4"></app-bot-card>
+            </div>
+            </div>
+          </div>
+        </div>
+        <br>
+      </div>
+    </div>

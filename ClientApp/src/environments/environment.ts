@@ -3,7 +3,10 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  sortapi : "http://localhost:57467/api/Home/sort",
+  launchnewgameapi : "http://localhost:57467/api/Home/newgame",
+  closegameapi: "http://localhost:57467/api/Home/endgame"
 };
 
 /*

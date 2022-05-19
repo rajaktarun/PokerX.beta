@@ -9,5 +9,7 @@ namespace Intel.PokerX.WebAPI.Models
     {
         public string Name { get;  set; }
         public int Rank { get;  set; }
+
+        public string IconPath { get; set; }
     }
 }

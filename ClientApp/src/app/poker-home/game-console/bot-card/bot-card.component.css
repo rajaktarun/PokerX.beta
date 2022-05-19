@@ -1,0 +1,26 @@
+.small-bot{
+    height: 50px;
+    width: 50px;
+}
+
+.botcardcss{
+    padding: 2px;
+}
+
+.medium-cardsize{
+    height:70px;
+    width: 53px
+}
+
+.column {
+    float: left;
+    padding: 5px;
+    width: 12%;
+  }
+  
+  /* Clearfix (clear floats) */
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

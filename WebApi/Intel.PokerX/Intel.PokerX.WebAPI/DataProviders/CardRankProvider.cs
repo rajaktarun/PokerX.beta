@@ -11,16 +11,23 @@ namespace Intel.PokerX.WebAPI.DataProviders
     {
         Dictionary<string, int> CardRank { get; set; }
 
+        Dictionary<string, string> IconPath { get; set; }
+
         IEnumerable<string> SortCard(string[] cardToSort);
     }
     public class CardRankProvider: ICardRankProvider
     {
         public Dictionary<string, int> CardRank { get; set; }
 
+        public Dictionary<string, string> IconPath { get; set; }
+
         public CardRankProvider()
         {
             string text = System.IO.File.ReadAllText(@".\DataProviders\CardRank.json");
             CardRank = JsonConvert.DeserializeObject<Dictionary<string,int>>(text);
+
+            string iconPath = System.IO.File.ReadAllText(@".\DataProviders\IconPath.json");
+            IconPath = JsonConvert.DeserializeObject<Dictionary<string, string>>(iconPath);
         }
 
         public IEnumerable<string> SortCard(string[] cardToSort)

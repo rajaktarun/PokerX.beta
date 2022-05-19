@@ -1,4 +1,33 @@
-<p>poker-home works!</p>
-<button id="ss" (click)="OnClick()">click</button>
-{{serverId}}
-{{textt}}
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src=".\assets\bot.png" alt="Logo" style="width:40px;" class="rounded-pill">
+        pokerX
+      </a>
+    </div>
+  </nav>
+<div class="pokerbody">
+
+    <div class="card text-center"  >
+        <div class="card-header">
+          pokerX
+        </div>
+        <div class="card-body" *ngIf="!enableConsole">
+          <h5 class="card-title">Welcome to pokerX</h5>
+          <p class="card-text">Click to play Game</p>
+          <div style="padding:10px">
+            <input type="text" [(ngModel)]="playerName" id="playerBox" placeholder="Enter Player Name">
+          </div>
+          <button id="ss" (click)="launchNewGame()">New Game</button>
+        </div>
+        <div class="card-body" *ngIf="enableConsole">
+            <h5 class="card-title">Game Id: {{gameid}}</h5>
+            <app-game-console></app-game-console>
+          </div>
+        <div class="card-footer text-muted">
+            Tarun | +91 8686563504 | tarun.rajak123@gmail.com
+        </div>
+      </div>
+
+</div>
+

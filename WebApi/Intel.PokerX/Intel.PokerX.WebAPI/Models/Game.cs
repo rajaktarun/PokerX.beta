@@ -10,5 +10,7 @@ namespace Intel.PokerX.WebAPI.Models
         public string GameId { get; set; }
 
         public List<Player> Players {get; set; }
+
+        public List<PockerCard> FreeCards { get; set; }
     }
 }

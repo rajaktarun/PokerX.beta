@@ -1,0 +1,11 @@
+
+<div class="botcardcss">
+    <img src="https://i.pinimg.com/originals/0c/67/5a/0c675a8e1061478d2b7b21b330093444.gif" class="rounded-circle small-bot" alt="player3.name"> 
+    <span class="h2"> {{player.name}}</span>
+    <br>
+      <div class="row" >
+        <div class="column" *ngFor="let card of player.cards;">
+            <img [src]="getIcon(card.iconPath)" style="height:65px;width:45px;border: 1px solid black;">
+        </div>
+    </div>
+</div>

@@ -10,40 +10,26 @@ import { PokerDataService } from '../services/pokerdata.service'
 export class PokerHomeComponent implements OnInit {
 
   serverId= 10;
-  textt="";
+  playerName="";
+  enableConsole:boolean = false;
   bookName:string[]= [];
   constructor(private pokerService: PokerDataService,
     private httpClient: HttpClient) { }
 
   ngOnInit(): void {
+    document.body.style.backgroundImage = "url('..\assets\background.jpg')";
   }
 
-  public OnClick1()
+gameid="";
+  launchNewGame()
   {
+    this.enableConsole = false;
     this.serverId=20;
-    this.pokerService.getData("http://localhost:57467/api/Home/Test").subscribe((data)=> {
-      console.log(data)
-      this.serverId=40;
+    this.pokerService.launchNewGame(this.playerName).subscribe((data)=> {
+      console.log(data);
+      this.gameid = data.gameId
+      this.pokerService.setActiveGame(data);
+      this.enableConsole = true;
     });  
   }
-
-  OnClick2(){
-    const promise = this.httpClient.get("http://localhost:57467/api/Home/Test").toPromise();
-    console.log(promise);  
-    promise.then((data)=>{
-      this.textt = JSON.stringify(data)
-      console.log(JSON.stringify(data));
-    }).catch((error)=>{
-      console.log("Promise rejected with " + JSON.stringify(error));
-    });
-  }
-
-  OnClick() {
-    this.pokerService.addBookWithObservable(["5H","3H"])
-       .subscribe(book => {
-          this.bookName = book;
-          console.log(this.bookName)
-       });
- }
-
 }
