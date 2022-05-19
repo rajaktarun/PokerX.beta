@@ -4,9 +4,9 @@
 
 export const environment = {
   production: false,
-  sortapi : "http://localhost:57467/api/Home/sort",
-  launchnewgameapi : "http://localhost:57467/api/Home/newgame",
-  closegameapi: "http://localhost:57467/api/Home/endgame"
+  sortapi : "https://intelpokerxwebapi20220519191345.azurewebsites.net/api/Home/sort",
+  launchnewgameapi : "https://intelpokerxwebapi20220519191345.azurewebsites.net/api/Home/newgame",
+  closegameapi: "https://intelpokerxwebapi20220519191345.azurewebsites.net/api/Home/endgame"
 };
 
 /*
